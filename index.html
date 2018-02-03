@@ -11,9 +11,16 @@
       background: url('https://res.cloudinary.com/dwjulenau/image/upload/f_auto,fl_lossy.progressive,q_auto:good/v1517672777/AMA/ama-background.jpg');
       font-family: Verdana,'Segoe UI', Tahoma, Geneva, sans-serif;
       font-size: 62.5%;
+      padding: 1.5rem 0;
     }
     *, *::before, *::after {
       box-sizing: border-box;
+    }
+    hr {
+      border: 0;
+      height: .1rem;
+      background-color: #777;
+      margin: 1.6rem 0;
     }
     body {
       -moz-osx-font-smoothing: grayscale;
@@ -21,9 +28,8 @@
       -webkit-font-smoothing: antialiased;
       -webkit-text-size-adjust: 100%;
       background-color: #fff;
-      border-radius: 1rem;
       margin: 1rem auto;
-      width: calc(100% - 1rem);
+      width: calc(100% - 4rem);
       max-width: 94rem;
       padding: 2rem;
     }
@@ -88,14 +94,25 @@
     }
 
     main small {
+      display: block;
       font-size: 1.3328rem;
+      line-height: 1.5;
+      padding-bottom: 1.3328rem;
     }
 
     main a:hover {
       text-decoration: none;
     }
 
+    main img {
+      max-width: 100%;
+      height: auto;
+    }
+
     @media (min-width: 600px) {
+      body {
+        border-radius: 1rem;
+      }
       header h1 {
         font: bold italic small-caps 2.9rem Verdana,'Segoe UI', Tahoma, Geneva, sans-serif;
       }
@@ -131,13 +148,14 @@
   </header>
   <main>
     <!-- Your Content Goes Here -->
-    <h1>Temporary Content Will Go Here.</h1>
-    <p>This is regular sized text. I've set the type scale to a minor third, based on <a href="http://type-scale.com/">http://type-scale.com/</a>. The following is just placeholder text.</p>
-    <p>Ewok skywalker jar <a href="#">skywalker solo</a> wicket mandalorians. <strong>Dantooine mandalorians</strong> jinn leia. Kamino solo darth darth grievous antilles. Boba aayla lando obi-wan ben yavin. Luuke palpatine aayla alderaan mandalore. Leia padmé qui-gon padmé. Organa qui-gon calrissian darth. Yoda tatooine obi-wan lando mace aayla mon. Boba kit vader skywalker palpatine. Droid mustafar hutt darth secura maul kenobi obi-wan. Calrissian dagobah biggs luke moff owen. Mace grievous hutt binks biggs mothma mara. Palpatine antilles jar fett dooku.</p>
+    <h1>Temporary Content For Preview Only.</h1>
+    <img src="http://res.cloudinary.com/dwjulenau/image/upload/c_fit,f_auto,fl_lossy.progressive,q_auto:good,w_760/v1517674849/AMA/jyotirmoy-gupta-527306.jpg" alt="">
+    <p>This is <strong>regular sized text</strong>. Ewok skywalker jar <a href="#">skywalker solo</a> wicket mandalorians. <strong>Dantooine mandalorians</strong> jinn leia. Kamino solo darth darth grievous antilles. Boba aayla lando obi-wan ben yavin. Luuke palpatine aayla alderaan mandalore. Leia padmé qui-gon padmé. Organa qui-gon calrissian darth. Yoda tatooine obi-wan lando mace aayla mon. Boba kit vader skywalker palpatine. Droid mustafar hutt darth secura maul kenobi obi-wan. Calrissian dagobah biggs luke moff owen. Mace grievous hutt binks biggs mothma mara. Palpatine antilles jar fett dooku.</p>
+    <small>This is <strong>small text</strong>. Kamino solo darth darth grievous antilles. Boba aayla lando obi-wan ben yavin. Luuke palpatine aayla alderaan mandalore. Leia padmé qui-gon padmé. Organa qui-gon calrissian darth. Yoda tatooine obi-wan lando mace aayla mon. Boba kit vader skywalker palpatine. Droid mustafar hutt darth secura maul kenobi obi-wan. Calrissian dagobah biggs luke moff owen. Mace grievous hutt binks biggs mothma mara. Palpatine antilles jar fett dooku.</small>
+    <hr>
     <h1>Headline One</h1>
     <h2>Headline Two</h2>
     <h3>Headline Three</h3>
-    <small>This is small text</small>
     <h1>Unordered List</h1>
     <ul>
       <li>Mon luuke skywalker lobot skywalker endor lars dantooine hutt.</li>
