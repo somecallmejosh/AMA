@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta name="Description" content="Started in 1995, the Academy of Martial Arts & Personal Development has grown to become the area's largest martial art style training center.">
-  <title>The Academy of Martial Arts</title>
-  <style>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Started in 1995, the Academy of Martial Arts &amp; Personal Development has grown to become the area's largest martial art style training center.">
+    <title>The Academy of Martial Arts</title>
+    <style>
     html {
       background: url('https://res.cloudinary.com/dwjulenau/image/upload/f_auto,fl_lossy.progressive,q_auto:good/v1517672777/AMA/ama-background.jpg');
       font-family: Verdana,'Segoe UI', Tahoma, Geneva, sans-serif;
@@ -15,6 +15,14 @@
     }
     *, *::before, *::after {
       box-sizing: border-box;
+    }
+    table {
+    	border:none;
+      border-collapse:collapse;
+      width:100%;
+    }
+    tr, td {
+      border:none;
     }
     hr {
       border: 0;
@@ -76,7 +84,8 @@
     }
 
     main p,
-    main li {
+    main li,
+    main td {
       font-size: 1.6rem;
       line-height: 1.3;
     }
@@ -120,27 +129,33 @@
       }
     }
   </style>
-</head>
-<body>
-  <header class="hcard">
-    <img class="u-photo" src="https://res.cloudinary.com/dwjulenau/image/upload/f_auto,fl_lossy.progressive,q_auto:good/v1517672919/AMA/MAFA_Logo_For_Page_Template.gif" alt="">
-    <h1 class="p-name">The Academy of Martial Arts<br>& Personal Development</h1>
-    <address>
-      <div>
-        <span class="p-street-address">440 Oakland Street</span>
-        <span class="p-locality">Manchester</span>,
-        <span class="p-region">CT</span>
-        <span class="p-postal-code">06042</span>
-      </div>
-      <div>
-        <a class="p-tel" href="tel:8606467993">860-646-7993</a> - 
-        <span class="u-url">www.TheAcademy.us</span> - 
-        <a class="u-email" href="mailto:masterwaldron@gmail.com">MasterWaldron@gmail.com</a>
-      </div>
-    </address>
-  </header>
-  <main>
-    <!-- Your Content Goes Here -->
-  </main>
-</body>
+  </head>
+  <body>
+    <header class="hcard"> <img class="u-photo" src="https://res.cloudinary.com/dwjulenau/image/upload/f_auto,fl_lossy.progressive,q_auto:good/v1517672919/AMA/MAFA_Logo_For_Page_Template.gif"
+        alt="">
+      <h1 class="p-name">The Academy of Martial Arts<br>
+        &amp; Personal Development</h1>
+      <address>
+        <div> <span class="p-street-address">440 Oakland Street</span> <span class="p-locality">Manchester</span>,
+          <span class="p-region">CT</span> <span class="p-postal-code">06042</span>
+        </div>
+        <div> <a class="p-tel" href="tel:8606467993">860-646-7993</a> - <span
+            class="u-url">www.TheAcademy.us</span>
+          - <a class="u-email" href="mailto:masterwaldron@gmail.com">MasterWaldron@gmail.com
+            &nbsp;</a> </div>
+      </address>
+    </header>
+    <main>
+      <table style="width: 100%" border="1">
+        <tbody>
+          <tr>
+            <td>Here is a table cell</td>
+            <td>Here is another table cell</td>
+          </tr>
+        </tbody>
+      </table>
+      <p><br>
+      </p>
+    </main>
+  </body>
 </html>
