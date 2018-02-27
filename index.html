@@ -9,18 +9,19 @@
   <style>
     html {
       background: url('https://res.cloudinary.com/dwjulenau/image/upload/f_auto,fl_lossy.progressive,q_auto:good/v1517672777/AMA/ama-background.jpg');
-      font-family: Verdana,'Segoe UI', Tahoma, Geneva, sans-serif;
-      font-size: 62.5%;
-      padding: 1.5rem 0;
+      padding: 15px 0;
     }
     *, *::before, *::after {
       box-sizing: border-box;
     }
     hr {
       border: 0;
-      height: .1rem;
+      height: 1px;
       background-color: #777;
-      margin: 1.6rem 0;
+      margin: 16px 0;
+    }
+    .hidden, [hidden] {
+      display: none !important;
     }
     body {
       -moz-osx-font-smoothing: grayscale;
@@ -28,24 +29,37 @@
       -webkit-font-smoothing: antialiased;
       -webkit-text-size-adjust: 100%;
       background-color: #fff;
-      margin: 1rem auto;
-      width: calc(100% - 4rem);
-      max-width: 94rem;
-      padding: 2rem;
+      margin: 10px auto;
+      width: calc(100% - 40px);
+      max-width: 940px;
+      padding: 20px;
     }
     header {
       align-items: flex-start;
       border-bottom: #010077 1px solid;
       display: flex;
       flex-wrap: wrap;
-      margin-bottom: 1rem;
-      padding-bottom: 1rem;
+      margin-bottom: 10px;
+      padding-bottom: 10px;
     }
     header h1 {
       color: #010077;
-      font: bold italic small-caps 1.7rem Verdana,'Segoe UI', Tahoma, Geneva, sans-serif;
-      margin: 0 0 0 1rem;
+      font: bold italic small-caps 17px Verdana,'Segoe UI', Tahoma, Geneva, sans-serif;
+      margin: 0 0 0 10px;
       padding: 0;
+    }
+    .contact-show {
+      -webkit-appearance: none;
+      appearance: none;
+      border: none;
+      cursor: pointer;
+      color: #010077;
+      font: bold 12px Arial, Helvetica, sans-serif;
+      padding: 0;
+      text-decoration: underline;
+    }
+    .contact-show:hover {
+      text-decoration: none;
     }
     .u-photo {
       height: 40px;
@@ -54,10 +68,10 @@
     address {
       color: #010077;
       display: block;
-      margin: 1rem 0;
+      margin: 10px 0;
       text-align: center;
       width: 100%;
-      font: 1.6rem Arial, Helvetica, sans-serif;
+      font: 16px Arial, Helvetica, sans-serif;
     }
     address a {
       color: #010077;
@@ -70,53 +84,27 @@
     }
 
     main {
-      max-width: 76rem;
+      max-width: 760px;
       margin: 0 auto;
-      padding: 4rem 0 2rem;
+      padding: 40px 0 20px;
     }
 
-    main p,
-    main li {
-      font-size: 1.6rem;
-      line-height: 1.3;
-    }
-
-    main h1 {
-      font-size: 2.7648rem;
-    }
-
-    main h2 {
-      font-size: 2.304rem; 
-    }
-
-    main h3 {
-      font-size: 1.92rem;
-    }
-
-    main a:hover {
-      text-decoration: none;
-    }
-
-    main img {
-      max-width: 100%;
-      height: auto;
-    }
 
     @media (min-width: 600px) {
       body {
-        border-radius: 1rem;
+        border-radius: 10px;
       }
       header h1 {
-        font: bold italic small-caps 2.9rem Verdana,'Segoe UI', Tahoma, Geneva, sans-serif;
+        font: bold italic small-caps 29px Verdana,'Segoe UI', Tahoma, Geneva, sans-serif;
       }
       .u-photo {
         height: 53px;
         width: 86px;
       }
       address {
-        margin: 1rem 0 0;
+        margin: 10px 0 0;
         text-align: right;
-        font: 1.6rem Arial, Helvetica, sans-serif;
+        font: 16px Arial, Helvetica, sans-serif;
       }
     }
   </style>
@@ -126,40 +114,88 @@
     <img class="u-photo" src="https://res.cloudinary.com/dwjulenau/image/upload/f_auto,fl_lossy.progressive,q_auto:good/v1517672919/AMA/MAFA_Logo_For_Page_Template.gif" alt="">
     <h1 class="p-name">The Academy of Martial Arts<br>& Personal Development</h1>
     <address>
-      <div>
-        <span class="p-street-address">440 Oakland Street</span>
-        <span class="p-locality">Manchester</span>,
-        <span class="p-region">CT</span>
-        <span class="p-postal-code">06042</span>
-      </div>
-      <div>
-        <a class="p-tel" href="tel:8606467993">860-646-7993</a> - 
-        <span class="u-url">www.TheAcademy.us</span> - 
-        <a class="u-email" href="mailto:masterwaldron@gmail.com">MasterWaldron@gmail.com</a>
+      <button class="contact-show" aria-hidden="true">Contact Us</button>
+      <div class="contact-content" hidden>
+        <div>
+          <span class="p-street-address">440 Oakland Street</span>
+          <span class="p-locality">Manchester</span>,
+          <span class="p-region">CT</span>
+          <span class="p-postal-code">06042</span>
+        </div>
+        <div>
+          <a class="p-tel" href="tel:8606467993">860-646-7993</a> - 
+          <span class="u-url">www.TheAcademy.us</span> - 
+          <a class="u-email" href="mailto:masterwaldron@gmail.com">MasterWaldron@gmail.com</a>
+        </div>
       </div>
     </address>
   </header>
   <main>
-    <!-- Your Content Goes Here -->
-    <h1>Temporary Content For Preview Only.</h1>
-    <img src="http://res.cloudinary.com/dwjulenau/image/upload/c_fit,f_auto,fl_lossy.progressive,q_auto:good,w_760/v1517674849/AMA/jyotirmoy-gupta-527306.jpg" alt="">
-    <p>This is <strong>regular sized text</strong>. Ewok skywalker jar <a href="#">skywalker solo</a> wicket mandalorians. <strong>Dantooine mandalorians</strong> jinn leia. Kamino solo darth darth grievous antilles. Boba aayla lando obi-wan ben yavin. Luuke palpatine aayla alderaan mandalore. Leia padmé qui-gon padmé. Organa qui-gon calrissian darth. Yoda tatooine obi-wan lando mace aayla mon. Boba kit vader skywalker palpatine. Droid mustafar hutt darth secura maul kenobi obi-wan. Calrissian dagobah biggs luke moff owen. Mace grievous hutt binks biggs mothma mara. Palpatine antilles jar fett dooku.</p>
-    <hr>
-    <h1>Headline One</h1>
-    <h2>Headline Two</h2>
-    <h3>Headline Three</h3>
-    <h1>Unordered List</h1>
-    <ul>
-      <li>Mon luuke skywalker lobot skywalker endor lars dantooine hutt.</li>
-      <li>Darth darth mandalorians antilles sebulba.</li>
-      <li>Yoda yavin fett skywalker luke lars.</li>
-    </ul>
-    <h2>Ordered List</h2>
-    <ol>
-      <li>Mon luuke skywalker lobot skywalker endor lars dantooine hutt.</li>
-      <li>Darth darth mandalorians antilles sebolba.</li>
-      <li>Yoda yavin fett skywalker luke lars.</li>
-    </ul>
+    <div id="jp.o" style="text-align: center;">
+    <h1 style="font-family: Arial, Helvetica, sans-serif; font-size: 12px; text-align: right;"><span style="font-family: verdana, geneva;"><strong><span style="font-size: xx-small;"><a href="https://docs.google.com/document/d/1oYmztTD5UvTfqVwAZLQrtOwmqMxibD-XDix67JCpqOk/edit?usp=sharing">Students</a> &nbsp;</span></strong></span></h1>
+    <h1 style="font-family: Arial, Helvetica, sans-serif; font-size: 12px; text-align: right;"><span style="font-family: verdana, geneva;"><strong><span style="font-size: xx-small;">&nbsp;&nbsp;</span></strong></span></h1>
+    <h1 style="font-family: Arial, Helvetica, sans-serif; font-size: 12px; text-align: center;"><span style="font-family: verdana, geneva; font-size: x-large;"><strong>Welcome to The Academy!</strong></span></h1>
+    <h1 style="font-family: Arial, Helvetica, sans-serif; font-size: 12px; text-align: center;">.</h1>
+    <h1 style="font-family: Arial, Helvetica, sans-serif; font-size: 12px; text-align: center;"><span style="font-family: arial, helvetica, sans-serif; font-size: medium;">Announcing the Academy's New <strong><a title="Academy Jedi training Program" href="https://drive.google.com/open?id=0B0Yxr8ztlKlJbzBEVEpuRjZVSVU" target="_blank">Jedi training Program</a></strong></span></h1>
+    <h1 style="font-family: Arial, Helvetica, sans-serif; font-size: 12px; text-align: center;"><span style="font-family: arial, helvetica, sans-serif; font-size: medium;"><strong><br /></strong></span></h1>
+    <h1 style="font-family: Arial, Helvetica, sans-serif; font-size: 12px; text-align: center;"><span style="font-family: arial, helvetica, sans-serif; font-size: medium;">Parents - see the Academy's<strong><em><span style="color: #d8272d;">&nbsp;</span></em></strong></span><strong style="font-family: arial, helvetica, sans-serif; font-size: medium;"><em><span style="color: #d8272d;"><a style="font-family: arial, helvetica, sans-serif; font-size: medium;" href="https://www.youtube.com/watch?v=26A1baXEdK0&feature=youtu.be">After School Program!</a></span></em></strong></h1>
+    <h1 style="font-family: Arial, Helvetica, sans-serif; font-size: 12px; text-align: center;"><strong style="font-family: arial, helvetica, sans-serif; font-size: medium;"><em><span style="color: #d8272d;"><br /></span></em></strong></h1>
+    <h1 style="font-family: Arial, Helvetica, sans-serif; font-size: 12px; text-align: center;"><span style="color: #cc0000;"><strong style="font-family: arial, helvetica, sans-serif; font-size: medium;"><em>We do Birthday Parties!! </em></strong></span><span style="font-size: x-small;"><strong style="font-family: arial, helvetica, sans-serif; font-size: medium;">Click "Programs" for details!</strong></span></h1>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <h1><span style="font-size: x-large;"><em><span style="font-family: arial, helvetica, sans-serif;"><strong>Youth Colored Belt Testing <span style="color: #ff0000;">Next Week</span>!</strong></span></em></span></h1>
+    <span style="font-family: arial, helvetica, sans-serif; font-size: small;"><a href="https://docs.google.com/document/d/19V2HTMs-gMciniwQXzQSIKzfhezxPvEu-JeG-uEJPeA/edit?usp=sharing">Click here for test times.</a></span>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <span id="docs-internal-guid-8348c658-b472-4a90-ebfb-6ede92307257">
+    <h1 dir="ltr"><span style="color: #ff0000;"><em><span style="font-size: x-large;">Movie Night at the Academy!</span></em></span></h1>
+    <h2 dir="ltr"><span>We're showing "Despicable Me 3&rdquo;!</span></h2>
+    </span>
+    <h3 id="jp.o" style="text-align: center;"><span id="docs-internal-guid-2ada8d6d-b474-8ee2-b8c5-8444fbea8ddc"><img src="https://lh5.googleusercontent.com/9olsLrrglKi4EV7yz70fVPsflhbnzP1xLGBsCyA1B3-Yc5N5wJnAiB7qkZL_tmekpNEmKDcOWqjI_uDLImqWuU38iSMJLzXiKxgqplnF9CJpFmkBN8GpoHUI7Q9qbmPAYWtB7jdC" alt="" width="202" height="290" /></span><br /><span>Remember: you can bring a friend for FREE! </span></h3>
+    <h3 style="text-align: center;"><span>Just click </span><a href="https://docs.google.com/document/d/15KBLSVdcpZYRltA_fhW_RGoSMrVqC94AYhoMceI1ORY/edit"><span>here</span></a><span>&nbsp;for more info and to print off a sign up sheet</span><span>! </span></h3>
+    <h3 style="text-align: center;"><span id="docs-internal-guid-8348c658-b472-4a90-ebfb-6ede92307257"><span>Hurry! Spaces are limited! </span></span></h3>
+    <p><span style="font-size: x-small;"><strong style="font-family: arial, helvetica, sans-serif; font-size: medium;"><br /></strong></span></p>
+    <p style="text-align: center;">&nbsp;</p>
+    <p>&nbsp;</p>
+    <p><strong style="font-family: 'arial black', 'avant garde';"><span style="font-size: small;"><span style="text-decoration: underline;"><a title="Events and Registration Page" href="https://docs.google.com/document/d/14qZjvSLrUKNwl0o2NToDOx84JMZibsJ3t-y5STXJg9Y/edit?usp=sharing" target="_blank">Upcoming Events</a></span></span></strong></p>
+    <div style="font-family: Arial, Helvetica, sans-serif; font-size: 12px; text-align: center;"><strong style="font-family: 'arial black', 'avant garde';"><span style="font-size: small;"><span id="docs-internal-guid-6615bdf3-8904-8d71-c1a1-3cd14d65516e"> </span><span style="text-decoration: underline;"><span id="docs-internal-guid-6615bdf3-8904-8d71-c1a1-3cd14d65516e">
+    <div><span><br /></span></div>
+    </span></span></span></strong></div>
+    <div style="font-family: Arial, Helvetica, sans-serif; font-size: 12px; text-align: center;"><strong style="font-family: 'arial black', 'avant garde';"><span style="font-size: small;"><span style="text-decoration: underline;"><br /></span></span></strong></div>
+    <div style="font-family: Arial, Helvetica, sans-serif; font-size: 12px; text-align: center;">
+    <object style="display: block; margin-left: auto; margin-right: auto;" width="560" height="315" data="http://www.youtube.com/v/WQGJIZc6z5M?autoplay=1&hl=en_US&version=3&rel=0" type="application/x-shockwave-flash">
+    <param name="data" value="http://www.youtube.com/v/WQGJIZc6z5M?autoplay=1&hl=en_US&version=3&rel=0" />
+    <param name="src" value="http://www.youtube.com/v/WQGJIZc6z5M?autoplay=1&hl=en_US&version=3&rel=0" />
+    </object>
+    </div>
+    <div style="font-family: Arial, Helvetica, sans-serif; font-size: 12px; text-align: center;"><strong style="color: #ff0000; font-family: verdana, geneva; font-size: small;">Click the "Programs & Schedules" link above for details on all of our programs.</strong></div>
+    <div style="font-family: Arial, Helvetica, sans-serif; font-size: 12px; text-align: center;"><strong style="color: #ff0000; font-family: verdana, geneva; font-size: small;"><br /></strong></div>
+    <div style="font-family: Arial, Helvetica, sans-serif; font-size: 12px; text-align: center;"><strong style="color: #0000ff; text-align: center;"><span style="font-family: arial, helvetica, sans-serif; font-size: small;"><span style="white-space: pre;">For u</span>pcoming Events & Tests&nbsp;- click the student Link at the very top right</span></strong></div>
+    <div style="font-family: Arial, Helvetica, sans-serif; font-size: 12px; text-align: center;"><strong style="color: #0000ff; text-align: center;"><span style="font-family: arial, helvetica, sans-serif; font-size: small;"><br /></span></strong></div>
+    <div style="font-family: Arial, Helvetica, sans-serif; font-size: 12px; text-align: center;"><span style="font-family: 'arial black', 'avant garde'; font-size: small; color: #ff0000;"><strong><span style="color: #ff0000; font-size: small;"><span style="font-family: arial, helvetica, sans-serif;">Videos: &nbsp; &nbsp;</span></span></strong><strong style="color: #0000ff; font-family: arial, helvetica, sans-serif; font-size: small;"><a title="The Academy Overview" href="http://youtu.be/WQGJIZc6z5M" target="_blank">Academy Overview</a></strong><strong style="color: #0000ff; font-family: arial, helvetica, sans-serif; font-size: small;">&nbsp; &nbsp; &nbsp;<a title="Hapkido" href="http://youtu.be/zkvzmnu6xTA" target="_blank">Hapkido</a>&nbsp; &nbsp; &nbsp;</strong></span><strong style="color: #0000ff; font-family: arial, helvetica, sans-serif; font-size: small;"><a title="Cardio-Kickboxing" href="http://youtu.be/5YfvO2fMKSM" target="_blank">Cardio-Kickboxing</a>&nbsp; &nbsp; &nbsp;&nbsp;</strong><strong style="color: #0000ff; font-family: arial, helvetica, sans-serif; font-size: small;"><a title="The Academy's After School Program" href="http://youtu.be/26A1baXEdK0" target="_blank">After School Program</a></strong></div>
+    <div style="font-family: Arial, Helvetica, sans-serif; font-size: 12px; text-align: center;"><span style="font-family: 'arial black', 'avant garde'; font-size: small; color: #ff0000;"><strong style="color: #0000ff; font-family: arial, helvetica, sans-serif; font-size: small;"><a title="The Academy at MCC" href="http://www.youtube.com/watch?v=Q2zyhb5MX7A" target="_blank">The Academy at MCC</a>&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;<a title="Just some fun at the Academy" href="http://youtu.be/ki6ER414Pss" target="_blank">Just some fun at the Academy</a>&nbsp; &nbsp; &nbsp; <a title="Demo Team Practice" href="http://youtu.be/wjAZ04P5g_4" target="_blank">Demo Team Practice</a></strong></span></div>
+    <div style="font-family: Arial, Helvetica, sans-serif; font-size: 12px; text-align: center;"><span style="font-family: 'arial black', 'avant garde'; font-size: small; color: #ff0000;"><strong style="color: #0000ff; font-family: arial, helvetica, sans-serif; font-size: small;"><br /></strong></span></div>
+    <div style="font-family: Arial, Helvetica, sans-serif; font-size: 12px; text-align: center;"><span style="color: #ff0000;"><strong style="color: #0000ff; text-align: center;"><span style="font-family: arial, helvetica, sans-serif; font-size: small;"><br /></span></strong></span></div>
+    <div style="font-family: Arial, Helvetica, sans-serif; font-size: 12px; text-align: center;"><span style="font-size: medium;"><em style="font-style: italic;"><a style="font-style: italic;" href="http://www.facebook.com/pages/The-Academy-of-Martial-Arts-Personal-Development/163182080446431" target="_blank"><img src="http://img2.wikia.nocookie.net/__cb20130501121248/logopedia/images/f/fb/Facebook_icon_2013.svg" alt="Find us on facebook" width="40" height="40" /></a><span style="font-style: italic; white-space: pre;"> </span><span style="white-space: pre;"> <a href="https://twitter.com/TheAcademyofMA"><img src="http://www.plummerhome.org/images/Twitter.png" alt="Twitter" width="40" height="40" /></a><span style="white-space: pre;"> </span> </span></em></span><strong style="text-align: center; color: #ff0000; font-family: verdana, geneva; font-size: small;"><strong style="text-align: center; color: #ff0000; font-family: verdana, geneva; font-size: small;"><span style="white-space: pre;"><a href="https://plus.google.com/b/115709029821279488010/115709029821279488010/posts/p/pub?gmbpt=true&pageId=115709029821279488010&hl=en"><img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTCs7ojuxdPE3lZuzOL_Eqdg51wJe9E2mdW0MfxrMxOk8gu7i3j" alt="G+" width="40" height="40" /></a><span style="white-space: pre;"> </span></span></strong><span style="white-space: pre;"><a href="http://www.pinterest.com/theacademyofma/"><img src="http://growingsocialmedia.com/wp-content/uploads/2013/12/pinterest-icon_logo.jpg" alt="Pinterest" width="40" height="40" /></a><span style="white-space: pre;"> </span> </span><span style="white-space: pre;"><a href="http://instagram.com/theacademyofmartialartsct"><img src="http://www.shapecollage.com/blog/wp-content/uploads/2012/04/instagram-icon.png" alt="Instagram" width="40" height="40" /></a></span></strong><strong style="text-align: center; color: #ff0000; font-family: verdana, geneva; font-size: small;"><span style="white-space: pre;"> <img src="http://cdn.iphonehacks.com/wp-content/uploads/2015/04/image-Tumblr-iOS-app-icon.png" alt="Tumblr Icon" width="40" height="40" /></span></strong></div>
+    </div>
+    <p id="yold" class="StudioBlurb" style="font-family: Arial, Helvetica, sans-serif; font-size: 12px; text-align: center;"><em style="font-family: verdana, geneva; text-align: -webkit-auto; font-size: small;"><br /></em></p>
+    <p id="yold" class="StudioBlurb" style="font-family: Arial, Helvetica, sans-serif; font-size: 12px; text-align: center;"><em style="font-family: verdana, geneva; text-align: -webkit-auto; font-size: small;">Congratulations to the Academy's Demo Team for taking 1st place</em><em style="font-family: verdana, geneva; text-align: -webkit-auto; font-size: small;">&nbsp;</em><em style="font-family: verdana, geneva; text-align: -webkit-auto; font-size: small;">at the&nbsp;</em><em style="font-family: verdana, geneva; text-align: -webkit-auto; font-size: small;">2011 Rhode Island State Open Championships!&nbsp;<a id="h45_" title="Academy Demo Team" href="http://www.facebook.com/video/video.php?v=10150146541961892&oid=364438691816">Click here to see the video</a></em></p>
+    <div id="ou_j13" style="font-family: Arial, Helvetica, sans-serif; font-size: 12px;">
+    <div style="text-align: center;"><span style="font-family: verdana, geneva; font-size: small;"><em><br /></em></span></div>
+    <div><span><em><span>
+    <div style="text-align: center;"><span style="font-family: verdana, geneva; font-size: small;"><a id="jhkg" href="http://www.ctnow.com/videobeta/15fd1282-45f4-4e6c-9b8d-c0ed51c7f08e/News/Manchester-Bullying-Seminar-2-8">Click here to view the FOX61 interview of</a></span></div>
+    <div style="text-align: center;"><span style="font-family: verdana, geneva; font-size: small;"><a id="jhkg" href="http://www.ctnow.com/videobeta/15fd1282-45f4-4e6c-9b8d-c0ed51c7f08e/News/Manchester-Bullying-Seminar-2-8">Master Waldron's Bullying seminar - "Bullying, what's a parent to do?"</a></span></div>
+    <div style="text-align: center;"><span style="font-family: verdana, geneva; font-size: small;"><strong><span><em><br /></em></span></strong></span></div>
+    <div style="text-align: center;"><span style="font-family: verdana, geneva; font-size: small;"><strong><span id="o16x"><em>Serving:</em></span></strong><span>&nbsp;</span><span id="hmzi">Manchester, Vernon, South Windsor, Bolton, Ellington, Tolland, East Hartford & other surrounding towns</span><br /></span></div>
+    </span></em></span></div>
+    </div>
   </main>
+  <script>
+    var contactShow = document.querySelector('.contact-show');
+    contactShow.addEventListener('click', function(){
+      document.querySelector('.contact-content').removeAttribute('hidden');
+      contactShow.setAttribute('hidden', '');
+    })
+  </script>
 </body>
 </html>
