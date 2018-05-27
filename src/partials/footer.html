@@ -1,0 +1,18 @@
+</div>
+<script>
+	// Hide / Show Address informtion
+	var contactShow = document.querySelector('.contact-show');
+	contactShow.addEventListener('click', function(){
+		document.querySelector('.contact-content').removeAttribute('hidden');
+		contactShow.setAttribute('hidden', '');
+	});
+
+	// Hide / Show Mobile Menu
+	var menu = document.querySelector('.menu'),
+			menuToggle = document.querySelector('.menu-toggle');
+	menuToggle.addEventListener('click', function(){
+		menu.classList.toggle('show-menu');
+	})
+</script>
+</body>
+</html>

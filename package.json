@@ -1,0 +1,30 @@
+{
+  "name": "ama",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "gulp sass:watch && live-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/somecallmejosh/AMA.git"
+  },
+  "author": "Joshua Briley",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/somecallmejosh/AMA/issues"
+  },
+  "homepage": "https://github.com/somecallmejosh/AMA#readme",
+  "devDependencies": {
+    "autoprefixer": "^8.5.1",
+    "cssnano": "^3.10.0",
+    "gulp": "^3.9.1",
+    "gulp-cli": "^2.0.1",
+    "gulp-inject-partials": "^1.0.4",
+    "gulp-postcss": "^7.0.1",
+    "gulp-sass": "^4.0.1",
+    "run-sequence": "^2.2.1"
+  }
+}

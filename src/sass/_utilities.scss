@@ -1,0 +1,77 @@
+// Colors:
+
+$black: #2d2d2d;
+$blue: #00f;
+$red: #f00;
+$maroon: #c00;
+
+.center {
+	text-align: center;
+}
+
+.text-blue {
+	color: $blue;
+}
+
+.text-maroon {
+	color: $maroon;
+}
+
+.text-red {
+	color: $red;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	padding: 0;
+	margin: 0;
+}
+
+p {
+	margin-top: 0;
+	margin-bottom: 1rem;
+}
+
+h1,
+.text-lg {
+	font-size: 1.5rem;
+}
+
+.mb {
+	margin-bottom: 1rem;
+
+	&-0 {
+		margin-bottom: 0;
+	}
+
+	&-sm {
+		margin-bottom: .5rem;
+	}
+
+	&-md {
+		margin-bottom: 1.5rem;
+	}
+
+	&-lg {
+		margin-bottom: 1.75rem;
+	}
+
+	&-xl {
+		margin-bottom: 2rem;
+	}
+}
+
+small {
+	display: block;
+	font-size: .5625rem;
+}
+
+.text-small {
+	font-size: .75rem;
+	strong {
+		font-size: .8125rem;
+	}
+}
+
+.text-md {
+	font-size: .8125rem;
+}
