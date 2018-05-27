@@ -175,7 +175,7 @@ main {
 
 	aside {
 		margin-left: 20px;
-		flex: 1 0 120px;
+		flex: 0 0 120px;
 	}
 
 	aside a {
@@ -189,7 +189,7 @@ main {
 	.menu {
 		margin-right: 20px;
 		padding: 30px 12px;
-		flex: 1 0 121px;
+		flex: 0 0 121px;
 		text-align: center;
 	}
 
@@ -224,6 +224,7 @@ main {
 
 	.content-wrap {
 		display: flex;
+		width: 100%;
 	}
 
 	header h1 {
